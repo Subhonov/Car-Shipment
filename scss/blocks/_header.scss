@@ -1,0 +1,44 @@
+.site-header {
+    width: 100%;
+    padding: 20px 0;
+    background: $--header-back-clr;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+}
+.header {
+    @include display($items:center,$space:space-between,$gap:opx)
+}
+.header__logo-link{
+    display: inline-block;
+}
+.navbar {
+    @include display($items:center,$space:space-between,$gap:50px)
+}
+.navbar__list {
+    @include display($items:center,$space:none,$gap:25px)
+}
+.navbar__link {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: $--text-clr;
+    transition: color 0.3s;
+    text-transform: uppercase;
+        &:hover{
+            color: $--text-hover;
+        }
+}
+.navbar__phone-number {
+    @include display($items:center,$space:none,$gap:10px);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: $--text-clr;
+    transition: color 0.3s;
+        &:hover{
+            color: $--text-hover;
+        }
+}
