@@ -111,6 +111,9 @@
     position: relative;
     @include textStyle($FW:500,$FS:14px,$LH:16.94px,$CASE:uppercase,$MB:11px,$CLR:$--text-clr);
         &::before{
+            width: 24px;
+            height: 24px;
+            content: "";
             position: absolute;
             background-image: url(../../images/Vector-icon.svg);
             background-size: 24px 24px;
